@@ -1,11 +1,9 @@
-# CloudFront URL create manually
+# CloudFront and S3 URL create manually
 
-d1z7petuv8jncc.cloudfront.net
+http://d1z7petuv8jncc.cloudfront.net
+http://aleksei-hladki-aws-task2.s3-website.eu-central-1.amazonaws.com
 
-# CloudFront URL create with serverless plugins
+# CloudFront and S3 URL create with serverless plugins
 
-d5k71cr4extiq.cloudfront.net
-
-# S3-website
-
-http://aleksei-hladki-aws-task2.s3-website.eu-central-1.amazonaws.com/
+http://d5k71cr4extiq.cloudfront.net
+http://aleksei-hladki-task2.s3-website-us-east-1.amazonaws.com
