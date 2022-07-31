@@ -7,7 +7,7 @@ export const environment: Config = {
     order: 'https://.execute-api.eu-west-1.amazonaws.com/dev',
     import: 'https://oos7mlxzkk.execute-api.eu-central-1.amazonaws.com/dev',
     bff: 'https://.execute-api.eu-west-1.amazonaws.com/dev',
-    cart: 'http://alhladkiy-cart-api-dev.eu-central-1.elasticbeanstalk.com//api',
+    cart: 'http://alhladkiy-cart-api-dev.eu-central-1.elasticbeanstalk.com/api',
   },
   apiEndpointsEnabled: {
     product: true,
