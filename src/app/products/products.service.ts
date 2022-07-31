@@ -31,7 +31,7 @@ export class ProductsService extends ApiService {
       return EMPTY;
     }
 
-    const url = this.getUrl('bff', `products/${id}`);
+    const url = this.getUrl('bff', `/products/${id}`);
     return this.http.put<Product>(url, changedProduct);
   }
 
@@ -41,7 +41,10 @@ export class ProductsService extends ApiService {
         'Endpoint "bff" is disabled. To enable change your environment.ts config'
       );
       return this.http
-        .get<Product[]>('/assets/products.json')
+        .get<Product[]>(
+          'https://43mcv6i5td.execute-api.eu-central-1.amazonaws.com/dev/products'
+        )
+
         .pipe(
           map(
             (products) => products.find((product) => product.id === id) || null
@@ -60,7 +63,9 @@ export class ProductsService extends ApiService {
       console.warn(
         'Endpoint "bff" is disabled. To enable change your environment.ts config'
       );
-      return this.http.get<Product[]>('/assets/products.json');
+      return this.http.get<Product[]>(
+        'https://43mcv6i5td.execute-api.eu-central-1.amazonaws.com/dev/products'
+      );
     }
 
     const url = this.getUrl('bff', 'products');

@@ -9,16 +9,16 @@ export const environment: Config = {
   apiEndpoints: {
     product: 'https://.execute-api.eu-west-1.amazonaws.com/dev',
     order: 'https://.execute-api.eu-west-1.amazonaws.com/dev',
-    import: 'https://.execute-api.eu-west-1.amazonaws.com/dev',
-    bff: 'https://.execute-api.eu-west-1.amazonaws.com/dev',
-    cart: 'https://.execute-api.eu-west-1.amazonaws.com/dev',
+    import: 'https://oos7mlxzkk.execute-api.eu-central-1.amazonaws.com/dev',
+    bff: 'https://43mcv6i5td.execute-api.eu-central-1.amazonaws.com/dev',
+    cart: 'http://alhladkiy-cart-api-dev.eu-central-1.elasticbeanstalk.com/api',
   },
   apiEndpointsEnabled: {
-    product: false,
-    order: false,
-    import: false,
-    bff: false,
-    cart: false,
+    product: true,
+    order: true,
+    import: true,
+    bff: true,
+    cart: true,
   },
 };
 
